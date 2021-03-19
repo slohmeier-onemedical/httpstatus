@@ -305,7 +305,8 @@ namespace Teapot.Web.Models
             });
             Add(504, new TeapotStatusCodeResult
             {
-                Description = "Gateway Timeout"
+                Description = "Gateway Timeout (note: currently returns 200)",
+                Link = new Uri("https://github.com/Readify/httpstatus/issues/98")
             });
             Add(505, new TeapotStatusCodeResult
             {
